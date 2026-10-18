@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" data-own="">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" data-own="">
+<title data-own="">Kusum Subedi — Mechanical Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" data-own="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" data-own="">
+<style data-own="">
+:root{--bg:#EDEDED;--ink:#1F1F1F;--muted:#454545;--surface:#FFFFFF;--tileN:#D2D2D2;--line:#C4C4C4;--inv:#1F1F1F;--on-a:#FFFFFF;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+.p1{--g:#E3F0F9;--t:#A9D2EE;--a:#2571AD;--d:#0E2C45;--on-a:#FFFFFF}
+.p2{--g:#E2EAF3;--t:#B6CAE6;--a:#15558B;--d:#0B2B4A;--on-a:#FFFFFF}
+.p3{--g:#ECECEC;--t:#BFC2C6;--a:#4A4D52;--d:#26282B;--on-a:#FFFFFF}
+.p4{--g:#F2E9DF;--t:#C9A88A;--a:#5A3423;--d:#2E1A12;--on-a:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEDED;--muted:#B8B8B8;--surface:#222222;--tileN:#2E2E2E;--line:#3A3A3A;--inv:#0A0A0A;color-scheme:dark}
+:root:not([data-theme="light"]) .p1{--g:#0D1B28;--t:#1E4466;--a:#6FB2E8;--d:#071521;--on-a:#111111}
+:root:not([data-theme="light"]) .p2{--g:#0C1726;--t:#213B60;--a:#86AEE4;--d:#060F1C;--on-a:#111111}
+:root:not([data-theme="light"]) .p3{--g:#18191B;--t:#3A3D42;--a:#B9BDC3;--d:#0E0F10;--on-a:#111111}
+:root:not([data-theme="light"]) .p4{--g:#1D140E;--t:#4A3424;--a:#D6A57C;--d:#120B07;--on-a:#111111}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEDED;--muted:#B8B8B8;--surface:#222222;--tileN:#2E2E2E;--line:#3A3A3A;--inv:#0A0A0A;color-scheme:dark}
+:root[data-theme="dark"] .p1{--g:#0D1B28;--t:#1E4466;--a:#6FB2E8;--d:#071521;--on-a:#111111}
+:root[data-theme="dark"] .p2{--g:#0C1726;--t:#213B60;--a:#86AEE4;--d:#060F1C;--on-a:#111111}
+:root[data-theme="dark"] .p3{--g:#18191B;--t:#3A3D42;--a:#B9BDC3;--d:#0E0F10;--on-a:#111111}
+:root[data-theme="dark"] .p4{--g:#1D140E;--t:#4A3424;--a:#D6A57C;--d:#120B07;--on-a:#111111}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,sans-serif;font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+img,video{max-width:100%}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.disp{font-family:'Michroma','Eurostile','Arial Black',sans-serif;font-weight:400}
+.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+.label{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+nav.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:24px 0}
+nav.top .links{display:flex;flex-wrap:wrap;gap:24px}
+nav.top a{text-decoration:none;padding:12px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.pdfbtn{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font:500 14px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;align-self:center}
+.pdfbtn[disabled]{opacity:.6;cursor:progress}
+.logo{font-family:'Michroma',sans-serif !important;font-size:22px !important;letter-spacing:.04em !important}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-weight:500;border:1.5px solid currentColor;color:var(--ink)}
+.btn.solid{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px;align-items:center;padding:48px 0 96px}
+.hero h1{margin:0;font-size:clamp(32px,4.6vw,62px);line-height:1.12}
+.lede{margin:0;max-width:34em;font-size:19px;color:var(--muted)}
+.lede strong{color:var(--ink)}
+.creds{display:flex;flex-wrap:wrap;gap:10px 28px;padding-top:20px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:26px}
+.slot{position:relative;background:var(--t,var(--tileN));border-radius:6px;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:16px;width:100%}
+.slot .media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.slot-label{position:relative;font-size:12px;background:var(--surface);color:var(--ink);padding:6px 10px;border-radius:6px;text-align:center}
+.slot.filled .slot-label{display:none}
+.slot .num{position:absolute;top:0;left:12px;color:#FFFFFF;line-height:1.05;z-index:1;pointer-events:none;font-size:clamp(60px,7vw,96px)}
+.slot.big .num{font-size:clamp(90px,14vw,200px)}
+.slot-btn{display:none}
+h2.sec{margin:0;font-size:clamp(30px,4.4vw,60px);letter-spacing:.02em}
+.work{padding:40px 0 112px}
+.work h2{text-align:center;margin-bottom:48px;font-size:clamp(36px,6vw,84px)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.tile{display:flex;flex-direction:column;gap:16px;text-decoration:none;color:var(--ink)}
+.tile .slot{aspect-ratio:3/4;border-bottom:6px solid var(--a)}
+.tname{text-align:center;font-family:'Michroma',sans-serif;font-size:15px;letter-spacing:.06em}
+.tmeta{display:flex;align-items:center;justify-content:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+.tmeta::before,.tmeta::after{content:"";width:32px;height:1px;background:var(--muted)}
+.skills{padding:40px 0 112px}
+.skhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:36px}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.card{background:var(--surface);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:20px}
+.card h3{margin:0;font-size:19px;line-height:1.3}
+.badge{width:52px;height:52px;border-radius:12px;background:var(--ink);color:var(--bg);display:inline-flex;align-items:center;justify-content:center;font-family:'Michroma',sans-serif;font-size:18px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:14px;padding:7px 12px;border-radius:999px;background:var(--bg);border:1.5px solid var(--bg)}
+.chip.tbd{background:transparent;border:1.5px dashed var(--muted)}
+.case{background:var(--g)}
+.case .inner{display:flex;flex-direction:column;gap:96px;padding:96px 0}
+.casehead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.hook{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px;align-items:end}
+.hook h2{margin:0;font-size:clamp(30px,4.4vw,58px);line-height:1.12}
+.impact{margin:0;font-size:22px;line-height:1.4;font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.fact{background:var(--surface);border-radius:12px;padding:22px 24px;display:flex;flex-direction:column;gap:6px}
+.fact b{font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px;align-items:start}
+.two h3{margin:0;font-size:26px;line-height:1.3}
+ul.bl{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px}
+ul.bl li{position:relative}
+.pillar{display:flex;align-items:center;gap:16px}
+.pillar h3{margin:0;font-size:clamp(24px,3vw,36px)}
+.badge.m{background:var(--d);color:#FFFFFF}
+.badge.i{background:var(--a);color:var(--on-a)}
+.media3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+figure{margin:0;display:flex;flex-direction:column;gap:12px;position:relative}
+figcaption{font-size:15px}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:10px}
+ol.steps li{background:var(--surface);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:6px;border-top:4px solid var(--a)}
+.sn{font-family:'Michroma',sans-serif;font-size:20px;color:var(--a)}
+.st{font-weight:600;line-height:1.3}
+.sd{font-size:14px;color:var(--muted)}
+.results{background:var(--d);color:#FFFFFF}
+.results .wrap{padding-top:88px;padding-bottom:88px;display:flex;flex-direction:column;gap:32px}
+.results .label{color:#C8C8C8}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}
+.rcard{position:relative;border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.rv{font-family:'Michroma',sans-serif;font-size:32px;line-height:1.1}
+.rl{font-size:15px;color:#D9D9D9}
+.rsum{margin:0;font-size:21px;line-height:1.45;font-weight:600}
+.results .btn{color:#FFFFFF}
+.results .btn.solid{background:#FFFFFF;color:#1F1F1F;border-color:#FFFFFF}
+.nextband{display:block;text-decoration:none;color:var(--ink);background:var(--g);border-top:10px solid var(--a)}
+.nextband .wrap{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.nextband .nt{font-family:'Michroma',sans-serif;font-size:clamp(22px,3.2vw,40px);line-height:1.2}
+.arrow{width:64px;height:64px;border-radius:999px;background:var(--a);color:var(--on-a);display:inline-flex;align-items:center;justify-content:center;font-size:26px;flex:none}
+footer{background:var(--inv);color:#FFFFFF}
+footer .wrap{padding-top:96px;padding-bottom:48px;display:flex;flex-direction:column;gap:40px}
+footer h2{margin:0;font-size:clamp(28px,4.4vw,58px);line-height:1.15}
+footer .btn{color:#FFFFFF}
+footer .btn.solid{background:#FFFFFF;color:#1F1F1F;border-color:#FFFFFF}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid #4A4A4A;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#C8C8C8}
+/* editing */
+body:not(.editing) .is-hidden{display:none !important}
+body.editing .is-hidden{opacity:.38}
+body.editing [data-e]{outline:1.5px dashed var(--muted);outline-offset:3px;border-radius:3px;cursor:text}
+body.editing .results [data-e],body.editing footer [data-e]{outline-color:#C8C8C8}
+body.editing .slot-btn{display:inline-flex;align-items:center;position:absolute;right:12px;bottom:12px;z-index:2;min-height:44px;padding:0 16px;border-radius:999px;border:0;background:#1F1F1F;color:#FFFFFF;font:500 14px 'IBM Plex Sans',sans-serif;cursor:pointer}
+body.editing [data-l]{outline:2px solid #2571AD;outline-offset:3px}
+body.editing .chip{cursor:pointer}
+.hbtn{position:absolute;top:6px;right:6px;z-index:3;min-height:32px;padding:0 10px;border-radius:999px;border:0;background:#1F1F1F;color:#FFFFFF;font:500 12px 'IBM Plex Sans',sans-serif;cursor:pointer}
+.ebar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;pointer-events:none}
+.ebar > *{pointer-events:auto}
+.ebar.on{background:var(--surface);border-top:1px solid var(--line);justify-content:space-between}
+.ebtn{min-height:48px;padding:0 20px;border-radius:999px;border:1.5px solid var(--ink);background:var(--surface);color:var(--ink);font:500 15px 'IBM Plex Sans',sans-serif;cursor:pointer}
+.ebtn.pri{background:var(--ink);color:var(--bg)}
+.estatus{font-size:14px;color:var(--muted)}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--surface);color:var(--ink);border-top:1px solid var(--line);padding:20px 20px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;box-shadow:0 -8px 30px rgba(0,0,0,.18)}
+.sheet label{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)}
+.sheet input{min-height:46px;padding:0 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:16px 'IBM Plex Sans',sans-serif}
+.sheet .row{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+</style>
+</head>
+<body>
+<div id="site" data-own="">
+<div class="wrap">
+<nav class="top" aria-label="Main"><a href="#top" class="logo">KS</a><div class="links"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button type="button" class="pdfbtn" hidden="">Download PDF</button></div></nav>
+
+<header class="hero" id="top">
+<div class="stack">
+<p class="label" data-e="e1">Mechanical Engineer · Design × Systems</p>
+<h1 class="disp" data-e="e2">Designing the part. Engineering the process.</h1>
+<p class="lede"><span data-e="e3">I take products from CAD and simulation to working prototype — then plan the fabrication, sequencing and assembly that make them repeatable.</span> <strong data-e="e4">From shape-memory actuators to build plans that ship on schedule.</strong></p>
+<div class="btns"><a class="btn solid" data-l="linkedin" href="#"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg><span class="ll">LinkedIn</span></a><a class="btn " data-l="repo" href="#"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"></path><path d="M4 7.5l8 4.5 8-4.5M12 12v9"></path></svg><span class="ll">GitHub / CAD repo</span></a><a class="btn " data-l="resume" href="#"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg><span class="ll">Resume (PDF)</span></a></div>
+<div class="creds"><span data-e="e5">BS Mechanical Eng. — Lafayette ’26</span><span data-e="e6">SME 30 Under 30</span><span data-e="e7">Easton, PA</span></div>
+</div>
+<div class="slot big" data-img="portrait" style="aspect-ratio:4/5;border-radius:18px"><span class="num disp" aria-hidden="true">KS</span><span class="slot-label mono">Hero image — sculpture mid-actuation, or portrait</span><button class="slot-btn" type="button">Add photo or video</button></div>
+</header>
+<section class="work" id="work" aria-labelledby="wk"><h2 id="wk" class="sec disp">SELECTED WORK</h2><div class="tiles"><a class="tile p1" href="#case1"><div class="slot" data-img="hero1"><span class="num disp" aria-hidden="true">01</span><span class="slot-label mono">Project photo</span></div><span class="tname" data-e="e8">SMP KINETICS</span><span class="tmeta" data-e="e9">Honors thesis · 30 wks</span></a><a class="tile p2" href="#case2"><div class="slot" data-img="hero2"><span class="num disp" aria-hidden="true">02</span><span class="slot-label mono">Project photo</span></div><span class="tname" data-e="e10">B.R.A.C.E.</span><span class="tmeta" data-e="e11">Senior capstone</span></a><a class="tile p3" href="#case3"><div class="slot" data-img="hero3"><span class="num disp" aria-hidden="true">03</span><span class="slot-label mono">Project photo</span></div><span class="tname" data-e="e12">DRAGSTER</span><span class="tmeta" data-e="e13">4-person team</span></a><a class="tile p4" href="#case4"><div class="slot" data-img="hero4"><span class="num disp" aria-hidden="true">04</span><span class="slot-label mono">Project photo</span></div><span class="tname" data-e="e14">FLOOR SEAT</span><span class="tmeta" data-e="e15">Product design</span></a></div></section>
+<section class="skills" id="skills" aria-labelledby="sk"><div class="skhead"><h2 id="sk" class="sec disp">SKILLS MATRIX</h2></div><div class="cards3"><div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><span class="badge">M</span><span class="disp" aria-hidden="true" style="font-size:40px;color:var(--line)">01</span></div><h3 class="disp">Mechanical &amp; CAD</h3><div class="chips"><span class="chip" data-h="h16">Fusion 360</span><span class="chip" data-h="h17">3D Modeling &amp; CAD</span><span class="chip" data-h="h18">Thermal Simulation</span><span class="chip" data-h="h19">Mechanical Simulation</span><span class="chip" data-h="h20">Mechatronics</span><span class="chip" data-h="h21">Arduino</span><span class="chip" data-h="h22">Smart Materials (SMP)</span><span class="chip tbd" data-h="h23" data-hdef="1">SolidWorks</span><span class="chip tbd" data-h="h24" data-hdef="1">FEA (Ansys/Abaqus)</span><span class="chip tbd" data-h="h25" data-hdef="1">GD&amp;T</span></div></div><div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><span class="badge">I</span><span class="disp" aria-hidden="true" style="font-size:40px;color:var(--line)">02</span></div><h3 class="disp">Industrial &amp; Systems</h3><div class="chips"><span class="chip" data-h="h26">Manufacturing Timeline Planning</span><span class="chip" data-h="h27">Process Sequencing &amp; Assembly Order</span><span class="chip" data-h="h28">Functional Requirements</span><span class="chip" data-h="h29">Stakeholder Interviews</span><span class="chip" data-h="h30">Analysis-Driven Down-Selection</span><span class="chip" data-h="h31">Cross-Team Coordination</span><span class="chip tbd" data-h="h32" data-hdef="1">Lean Six Sigma</span><span class="chip tbd" data-h="h33" data-hdef="1">Process Mapping (VSM)</span><span class="chip tbd" data-h="h34" data-hdef="1">Python / Data Analysis</span></div></div><div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><span class="badge">P</span><span class="disp" aria-hidden="true" style="font-size:40px;color:var(--line)">03</span></div><h3 class="disp">Manufacturing &amp; Prototyping</h3><div class="chips"><span class="chip" data-h="h35">Multi-Material 3D Printing</span><span class="chip" data-h="h36">Bambu Studio</span><span class="chip" data-h="h37">Laser Cutting</span><span class="chip" data-h="h38">CNC Milling</span><span class="chip" data-h="h39">Lathe</span><span class="chip" data-h="h40">Waterjet</span><span class="chip" data-h="h41">Design for Assembly</span><span class="chip" data-h="h42">Rapid Prototyping</span><span class="chip" data-h="h43">Electromechanical Integration</span><span class="chip tbd" data-h="h44" data-hdef="1">DFM</span></div></div></div></section>
+</div>
+
+<section id="case1" class="case p1" aria-labelledby="t1">
+<div class="wrap"><div class="inner">
+<div class="casehead"><span class="label">Case 01 / 04</span><a class="label" href="#work" style="text-decoration:none">All projects ↑</a></div>
+<div class="stack" style="gap:32px">
+<div class="hook"><div class="stack" style="gap:18px"><span class="label">The hook · <span data-e="e92">Honors thesis</span></span><h2 id="t1" class="disp" data-e="e93">Shape-Memory Kinetic Systems</h2></div>
+<p class="impact" data-e="e94">A 3D-printing method that embeds nichrome heaters inside shape-memory polymer — turning printed parts into electrically driven actuators, with wire spacing set by simulation. [Impact metric: e.g. “cut peak ΔT across the part by X%”]</p></div>
+<div class="slot big" data-img="hero1" style="aspect-ratio:16/7"><span class="num disp" aria-hidden="true">01</span><span class="slot-label mono">Hero video — Nepal ↔ NYC sculpture actuating</span><button class="slot-btn" type="button">Add photo or video</button></div>
+</div>
+<div class="stack"><p class="label">The context</p><div class="facts"><div class="fact"><span class="label" data-e="e45">Role</span><b data-e="e46">Sole researcher &amp; designer</b></div><div class="fact"><span class="label" data-e="e47">Team</span><b data-e="e48">Individual honors thesis</b></div><div class="fact"><span class="label" data-e="e49">Timeline</span><b data-e="e50">30 weeks</b></div><div class="fact"><span class="label" data-e="e51">Tools</span><b data-e="e52">Fusion 360 · Bambu Studio · Laser cutter · Arduino</b></div></div>
+<div class="two"><h3 class="disp" data-e="e95">Problem &amp; constraints</h3><ul class="bl"><li data-h="h96"><strong data-e="e97">Uniform heating:</strong> <span data-e="e98">uneven temperature across the SMP causes uncontrolled, partial deformation.</span></li><li data-h="h99"><strong data-e="e100">In-print embedding:</strong> <span data-e="e101">nichrome wire has to be placed precisely and repeatably while the part is printing.</span></li><li data-h="h102"><strong data-e="e103">Multi-material build:</strong> <span data-e="e104">PLA and TPU must print together and still deliver a one-way shape-memory response.</span></li></ul></div></div>
+<div class="stack"><div class="pillar"><span class="badge m">M</span><h3 class="disp">The Mechanical Pillar</h3></div><div class="media3"><figure data-h="h53"><div class="slot" data-img="c1m0" style="aspect-ratio:4/3"><span class="slot-label mono">CAD — SMP unit + wire fixture</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e54">CAD model.</strong> <span data-e="e55">Modular SMP units and a fixture for controlled nichrome placement.</span></figcaption></figure><figure data-h="h56"><div class="slot" data-img="c1m1" style="aspect-ratio:4/3"><span class="slot-label mono">Thermal simulation heatmap</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e57">Thermal simulation.</strong> <span data-e="e58">Peak, min and max ΔT predicted per wire spacing and current.</span></figcaption></figure><figure data-h="h59"><div class="slot" data-img="c1m2" style="aspect-ratio:4/3"><span class="slot-label mono">Printed PLA/TPU unit with embedded wire</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e60">Physical prototype.</strong> <span data-e="e61">Multi-material print with embedded heater, actuated on current.</span></figcaption></figure></div></div>
+<div class="stack"><div class="pillar"><span class="badge i">I</span><h3 class="disp">The Industrial Pillar</h3></div>
+<p class="label" data-e="e105">Process map — fabrication flow</p><ol class="steps"><li><span class="sn" data-e="e62">01</span><span class="st" data-e="e63">Simulate</span><span class="sd" data-e="e64">Sweep wire spacing vs. max ΔT</span></li><li><span class="sn" data-e="e65">02</span><span class="st" data-e="e66">Design fixture</span><span class="sd" data-e="e67">Lock in optimal spacing</span></li><li><span class="sn" data-e="e68">03</span><span class="st" data-e="e69">Print PLA + TPU</span><span class="sd" data-e="e70">Multi-material SMP sheet</span></li><li><span class="sn" data-e="e71">04</span><span class="st" data-e="e72">Embed nichrome</span><span class="sd" data-e="e73">Wire placed mid-print</span></li><li><span class="sn" data-e="e74">05</span><span class="st" data-e="e75">Laser-cut units</span><span class="sd" data-e="e76">Repeatable modular parts</span></li><li><span class="sn" data-e="e77">06</span><span class="st" data-e="e78">Sensor control</span><span class="sd" data-e="e79">Arduino + temperature feedback</span></li></ol>
+<div class="two"><div class="slot" data-img="c1chart" style="aspect-ratio:16/10"><span class="slot-label mono">Chart — wire spacing vs. max ΔT</span><button class="slot-btn" type="button">Add photo or video</button></div><ul class="bl"><li data-h="h106"><strong data-e="e107">Simulation before fabrication:</strong> <span data-e="e108">optimal spacing chosen on paper, cutting trial-and-error prints.</span></li><li data-h="h109"><strong data-e="e110">Fixture-driven repeatability:</strong> <span data-e="e111">the wire fixture standardizes placement across every unit.</span></li><li data-h="h112"><strong data-e="e113">Modular production:</strong> <span data-e="e114">print-then-laser-cut workflow for rapid, repeatable units.</span></li><li data-h="h115"><strong data-e="e116">[Cycle time per unit / yield]</strong> <span data-e="e117">— add if you tracked it.</span></li></ul></div></div>
+</div></div>
+<div class="results"><div class="wrap"><span class="label">The results</span><div class="rgrid"><div class="rcard" data-h="h80"><span class="rv" data-e="e81">30 wks</span><span class="rl" data-e="e82">Concept → working sculpture</span></div><div class="rcard" data-h="h83"><span class="rv" data-e="e84">[X%]</span><span class="rl" data-e="e85">Reduction in max ΔT at optimal spacing</span></div><div class="rcard" data-h="h86"><span class="rv" data-e="e87">[N]</span><span class="rl" data-e="e88">SMP units fabricated</span></div><div class="rcard" data-h="h89"><span class="rv" data-e="e90">1</span><span class="rl" data-e="e91">Novel fabrication method validated</span></div></div>
+<p class="rsum" data-e="e118">Validated a new print-embedded heating method for SMP actuators and delivered a working kinetic sculpture built from repeatable modular units.</p>
+<div class="btns"><a class="btn solid" data-l="cta1" href="#"><span class="ll">Read the thesis (PDF)</span></a></div></div></div>
+<a class="nextband p2" href="#case2"><div class="wrap"><div class="stack" style="gap:10px"><span class="label">Next project</span><span class="nt">02 — B.R.A.C.E. — Adaptive Knee Brace</span></div><span class="arrow" aria-hidden="true">→</span></div></a>
+</section>
+<section id="case2" class="case p2" aria-labelledby="t2">
+<div class="wrap"><div class="inner">
+<div class="casehead"><span class="label">Case 02 / 04</span><a class="label" href="#work" style="text-decoration:none">All projects ↑</a></div>
+<div class="stack" style="gap:32px">
+<div class="hook"><div class="stack" style="gap:18px"><span class="label">The hook · <span data-e="e166">Senior capstone</span></span><h2 id="t2" class="disp" data-e="e167">B.R.A.C.E. — Adaptive Knee Brace</h2></div>
+<p class="impact" data-e="e168">A carbon-fiber 3D-printed brace that mechanically locks out hyperextension and auto-adjusts compression from pressure-sensor feedback. [Impact metric: e.g. “holds X° stop, adjusts compression in Y s”]</p></div>
+<div class="slot big" data-img="hero2" style="aspect-ratio:16/7"><span class="num disp" aria-hidden="true">02</span><span class="slot-label mono">Hero image — annotated brace diagram or brace on athlete</span><button class="slot-btn" type="button">Add photo or video</button></div>
+</div>
+<div class="stack"><p class="label">The context</p><div class="facts"><div class="fact"><span class="label" data-e="e119">Role</span><b data-e="e120">Team facilitator · electromechanical integration</b></div><div class="fact"><span class="label" data-e="e121">Team</span><b data-e="e122">Team B.R.A.C.E. — [N] engineers</b></div><div class="fact"><span class="label" data-e="e123">Timeline</span><b data-e="e124">[2 semesters, 2025–26]</b></div><div class="fact"><span class="label" data-e="e125">Tools</span><b data-e="e126">3D printing (carbon fiber) · pressure sensors · [CAD tool]</b></div></div>
+<div class="two"><h3 class="disp" data-e="e169">Problem &amp; constraints</h3><ul class="bl"><li data-h="h170"><strong data-e="e171">Comfort first:</strong> <span data-e="e172">athletes must wear it through full practices and games.</span></li><li data-h="h173"><strong data-e="e174">Biomechanics:</strong> <span data-e="e175">stop hyperextension without restricting normal knee range of motion.</span></li><li data-h="h176"><strong data-e="e177">Sports regulations:</strong> <span data-e="e178">the design must stay legal for competitive play.</span></li></ul></div></div>
+<div class="stack"><div class="pillar"><span class="badge m">M</span><h3 class="disp">The Mechanical Pillar</h3></div><div class="media3"><figure data-h="h127"><div class="slot" data-img="c2m0" style="aspect-ratio:4/3"><span class="slot-label mono">CAD — medial/lateral hinges + hard stop</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e128">Locking mechanism.</strong> <span data-e="e129">Medial and lateral hinges with a hard stop at the hyperextension limit.</span></figcaption></figure><figure data-h="h130"><div class="slot" data-img="c2m1" style="aspect-ratio:4/3"><span class="slot-label mono">Diagram — compression wire path + dial</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e131">Adaptive compression.</strong> <span data-e="e132">Sensor-feedback dial drives compression along the wire path.</span></figcaption></figure><figure data-h="h133"><div class="slot" data-img="c2m2" style="aspect-ratio:4/3"><span class="slot-label mono">Photo — 4-piece 3D-printed prototype</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e134">Physical prototype.</strong> <span data-e="e135">Open patella window for natural kneecap tracking.</span></figcaption></figure></div></div>
+<div class="stack"><div class="pillar"><span class="badge i">I</span><h3 class="disp">The Industrial Pillar</h3></div>
+<p class="label" data-e="e179">Process map — human-centered design flow</p><ol class="steps"><li><span class="sn" data-e="e136">01</span><span class="st" data-e="e137">Interview</span><span class="sd" data-e="e138">College athletes as stakeholders</span></li><li><span class="sn" data-e="e139">02</span><span class="st" data-e="e140">Requirements</span><span class="sd" data-e="e141">Biomechanics + regulations</span></li><li><span class="sn" data-e="e142">03</span><span class="st" data-e="e143">Proof of concept</span><span class="sd" data-e="e144">Parallel concept builds</span></li><li><span class="sn" data-e="e145">04</span><span class="st" data-e="e146">Down-select</span><span class="sd" data-e="e147">Score vs. requirements</span></li><li><span class="sn" data-e="e148">05</span><span class="st" data-e="e149">Integrate</span><span class="sd" data-e="e150">Lock + sensor dial + shell</span></li><li><span class="sn" data-e="e151">06</span><span class="st" data-e="e152">Test &amp; present</span><span class="sd" data-e="e153">Poster presentation</span></li></ol>
+<div class="two"><div class="slot" data-img="c2chart" style="aspect-ratio:16/10"><span class="slot-label mono">Chart — compression vs. dial setting / sensor response</span><button class="slot-btn" type="button">Add photo or video</button></div><ul class="bl"><li data-h="h180"><strong data-e="e181">Team operations:</strong> <span data-e="e182">ran meetings — agendas, discussion leads, decision tracking.</span></li><li data-h="h183"><strong data-e="e184">Sub-team coordination:</strong> <span data-e="e185">planned communication between mechanical and electronics sub-teams.</span></li><li data-h="h186"><strong data-e="e187">Design for assembly:</strong> <span data-e="e188">4-piece printed shell built for fast rebuilds between iterations.</span></li><li data-h="h189"><strong data-e="e190">[Iteration count / cycle time per prototype]</strong> <span data-e="e191">— add if tracked.</span></li></ul></div></div>
+</div></div>
+<div class="results"><div class="wrap"><span class="label">The results</span><div class="rgrid"><div class="rcard" data-h="h154"><span class="rv" data-e="e155">[X°]</span><span class="rl" data-e="e156">Hyperextension stop angle</span></div><div class="rcard" data-h="h157"><span class="rv" data-e="e158">[X–Y kPa]</span><span class="rl" data-e="e159">Adaptive compression range</span></div><div class="rcard" data-h="h160"><span class="rv" data-e="e161">[N]</span><span class="rl" data-e="e162">Athletes interviewed</span></div><div class="rcard" data-h="h163"><span class="rv" data-e="e164">[N]</span><span class="rl" data-e="e165">Prototype iterations</span></div></div>
+<p class="rsum" data-e="e192">Turned athlete interviews into a requirements-driven, integrated prototype combining a mechanical hyperextension stop with sensor-automated compression.</p>
+<div class="btns"><a class="btn solid" data-l="cta2" href="#"><span class="ll">View project poster</span></a></div></div></div>
+<a class="nextband p3" href="#case3"><div class="wrap"><div class="stack" style="gap:10px"><span class="label">Next project</span><span class="nt">03 — High-Performance Electric Dragster</span></div><span class="arrow" aria-hidden="true">→</span></div></a>
+</section>
+<section id="case3" class="case p3" aria-labelledby="t3">
+<div class="wrap"><div class="inner">
+<div class="casehead"><span class="label">Case 03 / 04</span><a class="label" href="#work" style="text-decoration:none">All projects ↑</a></div>
+<div class="stack" style="gap:32px">
+<div class="hook"><div class="stack" style="gap:18px"><span class="label">The hook · <span data-e="e240">Manufacturing &amp; design course</span></span><h2 id="t3" class="disp" data-e="e241">High-Performance Electric Dragster</h2></div>
+<p class="impact" data-e="e242">Modeled an optimal 4.7 s race time, then traded it against braking, cost and manufacturability to ship a 2:1 AWD build with a servo brake triggered at ~385 in. [Add actual race result: X.X s]</p></div>
+<div class="slot big" data-img="hero3" style="aspect-ratio:16/7"><span class="num disp" aria-hidden="true">03</span><span class="slot-label mono">Hero image — dragster CAD render or on track</span><button class="slot-btn" type="button">Add photo or video</button></div>
+</div>
+<div class="stack"><p class="label">The context</p><div class="facts"><div class="fact"><span class="label" data-e="e193">Role</span><b data-e="e194">Chassis &amp; wheels lead · manufacturing planner</b></div><div class="fact"><span class="label" data-e="e195">Team</span><b data-e="e196">4 engineers</b></div><div class="fact"><span class="label" data-e="e197">Timeline</span><b data-e="e198">[One semester]</b></div><div class="fact"><span class="label" data-e="e199">Tools</span><b data-e="e200">CNC mill · lathe · waterjet · 3D printing · laser cutter</b></div></div>
+<div class="two"><h3 class="disp" data-e="e243">Problem &amp; constraints</h3><ul class="bl"><li data-h="h244"><strong data-e="e245">Competing goals:</strong> <span data-e="e246">acceleration vs. braking vs. controllability vs. manufacturability.</span></li><li data-h="h247"><strong data-e="e248">Cost penalties:</strong> <span data-e="e249">each extra battery added cost that offset its speed gain.</span></li><li data-h="h250"><strong data-e="e251">Stopping distance:</strong> <span data-e="e252">braking had to engage reliably at a fixed track position.</span></li></ul></div></div>
+<div class="stack"><div class="pillar"><span class="badge m">M</span><h3 class="disp">The Mechanical Pillar</h3></div><div class="media3"><figure data-h="h201"><div class="slot" data-img="c3m0" style="aspect-ratio:4/3"><span class="slot-label mono">CAD — chassis + AWD drivetrain</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e202">Drivetrain.</strong> <span data-e="e203">AWD with fixed 2:1 gears (0.75 in / 0.375 in) — no slip vs. pulleys.</span></figcaption></figure><figure data-h="h204"><div class="slot" data-img="c3m1" style="aspect-ratio:4/3"><span class="slot-label mono">Before/after — servo brake engaging</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e205">Braking system.</strong> <span data-e="e206">Servo drives a linear stop into the axle stop at ~385 in.</span></figcaption></figure><figure data-h="h207"><div class="slot" data-img="c3m2" style="aspect-ratio:4/3"><span class="slot-label mono">Photo — treaded TPU wheels</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e208">Wheels.</strong> <span data-e="e209">Printed TPU with treads for traction on the track.</span></figcaption></figure></div></div>
+<div class="stack"><div class="pillar"><span class="badge i">I</span><h3 class="disp">The Industrial Pillar</h3></div>
+<p class="label" data-e="e253">Process map — manufacturing routing</p><ol class="steps"><li><span class="sn" data-e="e210">CNC</span><span class="st" data-e="e211">Aluminum brake stop</span><span class="sd" data-e="e212">Tight-tolerance fit</span></li><li><span class="sn" data-e="e213">LATHE</span><span class="st" data-e="e214">Aluminum axles</span><span class="sd" data-e="e215">Roundness + custom geometry</span></li><li><span class="sn" data-e="e216">JET</span><span class="st" data-e="e217">Waterjet chassis</span><span class="sd" data-e="e218">Precision profile</span></li><li><span class="sn" data-e="e219">TPU</span><span class="st" data-e="e220">Printed wheels</span><span class="sd" data-e="e221">Traction</span></li><li><span class="sn" data-e="e222">PLA</span><span class="st" data-e="e223">Hubs, servo mount, brake parts</span><span class="sd" data-e="e224">Fast iteration</span></li><li><span class="sn" data-e="e225">LASER</span><span class="st" data-e="e226">Plywood battery mount</span><span class="sd" data-e="e227">Light, quick to cut</span></li></ol>
+<div class="two"><div class="slot" data-img="c3chart" style="aspect-ratio:16/10"><span class="slot-label mono">Chart — position / velocity / acceleration vs. time</span><button class="slot-btn" type="button">Add photo or video</button></div><ul class="bl"><li data-h="h254"><strong data-e="e255">Process selection:</strong> <span data-e="e256">each part routed to the process that best fit tolerance, time and cost.</span></li><li data-h="h257"><strong data-e="e258">Battery trade study:</strong> <span data-e="e259">a second battery gained ~2 s but lost it to penalty and cost — shipped with one.</span></li><li data-h="h260"><strong data-e="e261">Schedule ownership:</strong> <span data-e="e262">planned the manufacturing timeline and assembly order for the team.</span></li><li data-h="h263"><strong data-e="e264">[Machine hours / total build time]</strong> <span data-e="e265">— add if tracked.</span></li></ul></div></div>
+</div></div>
+<div class="results"><div class="wrap"><span class="label">The results</span><div class="rgrid"><div class="rcard" data-h="h228"><span class="rv" data-e="e229">4.7 s</span><span class="rl" data-e="e230">Modeled optimal race time</span></div><div class="rcard" data-h="h231"><span class="rv" data-e="e232">2:1</span><span class="rl" data-e="e233">Gear ratio (2.1 modeled optimum)</span></div><div class="rcard" data-h="h234"><span class="rv" data-e="e235">~385 in</span><span class="rl" data-e="e236">Coded brake engagement point</span></div><div class="rcard" data-h="h237"><span class="rv" data-e="e238">6</span><span class="rl" data-e="e239">Manufacturing processes coordinated</span></div></div>
+<p class="rsum" data-e="e266">Analysis-driven decisions on gear ratio, battery count and drivetrain, plus a six-process manufacturing plan, delivered a working AWD dragster on schedule.</p>
+<div class="btns"><a class="btn solid" data-l="cta3" href="#"><span class="ll">Download design report</span></a></div></div></div>
+<a class="nextband p4" href="#case4"><div class="wrap"><div class="stack" style="gap:10px"><span class="label">Next project</span><span class="nt">04 — Kinetic Floor Seating</span></div><span class="arrow" aria-hidden="true">→</span></div></a>
+</section>
+<section id="case4" class="case p4" aria-labelledby="t4">
+<div class="wrap"><div class="inner">
+<div class="casehead"><span class="label">Case 04 / 04</span><a class="label" href="#work" style="text-decoration:none">All projects ↑</a></div>
+<div class="stack" style="gap:32px">
+<div class="hook"><div class="stack" style="gap:18px"><span class="label">The hook · <span data-e="e311">Product design</span></span><h2 id="t4" class="disp" data-e="e312">Kinetic Floor Seating</h2></div>
+<p class="impact" data-e="e313">Tatami-style floor seating reimagined: a separate chair glides on rail-and-groove wheels over a wooden base, designed for modular assembly. [Impact metric: e.g. “X parts, assembles in Y min, no tools”]</p></div>
+<div class="slot big" data-img="hero4" style="aspect-ratio:16/7"><span class="num disp" aria-hidden="true">04</span><span class="slot-label mono">Hero render — walnut seat on wooden base</span><button class="slot-btn" type="button">Add photo or video</button></div>
+</div>
+<div class="stack"><p class="label">The context</p><div class="facts"><div class="fact"><span class="label" data-e="e267">Role</span><b data-e="e268">[Designer — confirm solo or team]</b></div><div class="fact"><span class="label" data-e="e269">Team</span><b data-e="e270">[N]</b></div><div class="fact"><span class="label" data-e="e271">Timeline</span><b data-e="e272">[Duration]</b></div><div class="fact"><span class="label" data-e="e273">Tools</span><b data-e="e274">[CAD tool] · [shop tools]</b></div></div>
+<div class="two"><h3 class="disp" data-e="e314">Problem &amp; constraints</h3><ul class="bl"><li data-h="h315"><strong data-e="e316">Mobility:</strong> <span data-e="e317">smooth front-and-back movement without leaving the base.</span></li><li data-h="h318"><strong data-e="e319">Ergonomics:</strong> <span data-e="e320">support several seating positions for focus and comfort.</span></li><li data-h="h321"><strong data-e="e322">Simplicity:</strong> <span data-e="e323">keep the minimal spirit of Tatami seating.</span></li></ul></div></div>
+<div class="stack"><div class="pillar"><span class="badge m">M</span><h3 class="disp">The Mechanical Pillar</h3></div><div class="media3"><figure data-h="h275"><div class="slot" data-img="c4m0" style="aspect-ratio:4/3"><span class="slot-label mono">CAD — iterative 3D models</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e276">Iterative CAD.</strong> <span data-e="e277">Models refined ergonomics and assembly.</span></figcaption></figure><figure data-h="h278"><div class="slot" data-img="c4m1" style="aspect-ratio:4/3"><span class="slot-label mono">Detail — rail-and-groove wheel</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e279">Rail-and-groove wheels.</strong> <span data-e="e280">Guided, smooth sliding motion.</span></figcaption></figure><figure data-h="h281"><div class="slot" data-img="c4m2" style="aspect-ratio:4/3"><span class="slot-label mono">Render — chair + wooden base</span><button class="slot-btn" type="button">Add photo or video</button></div><figcaption><strong data-e="e282">Prototype.</strong> <span data-e="e283">Sturdy wooden base with a separate chair.</span></figcaption></figure></div></div>
+<div class="stack"><div class="pillar"><span class="badge i">I</span><h3 class="disp">The Industrial Pillar</h3></div>
+<p class="label" data-e="e324">Process map — design &amp; assembly flow</p><ol class="steps"><li><span class="sn" data-e="e284">01</span><span class="st" data-e="e285">Concept</span><span class="sd" data-e="e286">Design thinking, Tatami study</span></li><li><span class="sn" data-e="e287">02</span><span class="st" data-e="e288">Model</span><span class="sd" data-e="e289">Iterative 3D CAD</span></li><li><span class="sn" data-e="e290">03</span><span class="st" data-e="e291">Ergonomics</span><span class="sd" data-e="e292">Seating positions</span></li><li><span class="sn" data-e="e293">04</span><span class="st" data-e="e294">Modularize</span><span class="sd" data-e="e295">Design for assembly</span></li><li><span class="sn" data-e="e296">05</span><span class="st" data-e="e297">Build</span><span class="sd" data-e="e298">Base, chair, wheels</span></li></ol>
+<div class="two"><div class="slot" data-img="c4chart" style="aspect-ratio:16/10"><span class="slot-label mono">Diagram — exploded view / bill of materials</span><button class="slot-btn" type="button">Add photo or video</button></div><ul class="bl"><li data-h="h325"><strong data-e="e326">Design for assembly:</strong> <span data-e="e327">chair built as a separate module that drops onto the base.</span></li><li data-h="h328"><strong data-e="e329">[Part count / BOM cost]</strong> <span data-e="e330">— add.</span></li><li data-h="h331"><strong data-e="e332">[Assembly time / tools needed]</strong> <span data-e="e333">— add.</span></li></ul></div></div>
+</div></div>
+<div class="results"><div class="wrap"><span class="label">The results</span><div class="rgrid"><div class="rcard" data-h="h299"><span class="rv" data-e="e300">[N]</span><span class="rl" data-e="e301">Seating positions supported</span></div><div class="rcard" data-h="h302"><span class="rv" data-e="e303">[N]</span><span class="rl" data-e="e304">Total parts</span></div><div class="rcard" data-h="h305"><span class="rv" data-e="e306">[Y min]</span><span class="rl" data-e="e307">Assembly time</span></div><div class="rcard" data-h="h308"><span class="rv" data-e="e309">[$X]</span><span class="rl" data-e="e310">Material cost</span></div></div>
+<p class="rsum" data-e="e334">Delivered an ergonomic, modular floor seat whose sliding chair supports multiple seating positions — designed around simple, repeatable assembly.</p>
+<div class="btns"><a class="btn solid" data-l="cta4" href="#"><span class="ll">View render gallery</span></a></div></div></div>
+<a class="nextband" href="#contact" style="--g:var(--bg);--a:var(--ink);--on-a:var(--bg)"><div class="wrap"><div class="stack" style="gap:10px"><span class="label">That’s the work</span><span class="nt">Let’s talk</span></div><span class="arrow" aria-hidden="true">→</span></div></a>
+</section>
+<footer id="contact"><div class="wrap">
+<h2 class="disp" data-e="e335">Let’s build something that moves.</h2>
+<div class="btns"><a class="btn solid" data-l="email" href="#"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg><span class="ll">Email me</span></a><a class="btn " data-l="linkedin2" href="#"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg><span class="ll">LinkedIn</span></a><a class="btn " data-l="resume2" href="#"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg><span class="ll">Resume (PDF)</span></a></div>
+<div class="foot"><span data-e="e336">Kusum Subedi — Portfolio ’26</span><span data-e="e337">Mechanical Engineering · Design × Systems</span></div>
+</div></footer>
+</div>
+<script type="application/json" id="state" data-own="">{"t":{"e3":"I love taking products from concepts and ideas to CAD and simulation to working prototype then plan the fabrication, sequencing and assembly that make them human centric.","e4":"From shape-memory actuators to collaborate with a team for building a knee-brace.","e8":"KINETIC SCULPTURE","e10":"KNEE B.R.A.C.E.","e11":"Senior design capstone30 wks · 12 person team","e12":"ELECTRIC DRAGSTER","e13":"Manufacturing and Design"},"img":{"portrait":{"url":"/_blob/13da583ffe2c639117b6409ab234d9ae","type":"image/jpeg"}},"links":{"linkedin":{"label":"LinkedIn","href":"https://www.linkedin.com/in/kusumsubedi13/"}},"hide":{"h23":true,"h25":true}}</script>
+<script data-own="">
+(function () {
+  var stateEl = document.getElementById('state');
+  var S = { t: {}, img: {}, links: {}, hide: {} };
+  try { var p = JSON.parse(stateEl.textContent || '{}'); for (var k in S) { if (p[k]) S[k] = p[k]; } } catch (e) {}
+
+  // Pristine copy of the page, taken before anything below changes it.
+  var HEAD = Array.prototype.map.call(document.head.querySelectorAll('[data-own]'), function (n) { return n.outerHTML; }).join('\n');
+  var BODY = Array.prototype.filter.call(document.body.children, function (n) { return n.hasAttribute('data-own'); }).map(function (n) { return n.outerHTML; }).join('\n');
+
+  function norm(s) { return (s || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim(); }
+  var defaults = {}, linkDefaults = {};
+  document.querySelectorAll('[data-e]').forEach(function (el) { defaults[el.dataset.e] = el.textContent; });
+  document.querySelectorAll('[data-l]').forEach(function (a) { linkDefaults[a.dataset.l] = a.querySelector('.ll').textContent; });
+
+  function apply() {
+    document.querySelectorAll('[data-e]').forEach(function (el) {
+      var v = S.t[el.dataset.e];
+      if (typeof v === 'string' && !el.isContentEditable) el.textContent = v;
+    });
+    document.querySelectorAll('[data-img]').forEach(function (el) {
+      var old = el.querySelector('.media'); if (old) old.remove();
+      var v = S.img[el.dataset.img];
+      el.classList.toggle('filled', !!v);
+      if (!v) return;
+      var m;
+      if (/^video\//.test(v.type || '')) {
+        m = document.createElement('video');
+        m.muted = true; m.loop = true; m.autoplay = true; m.playsInline = true;
+        m.setAttribute('muted', ''); m.setAttribute('playsinline', ''); m.setAttribute('autoplay', ''); m.setAttribute('loop', '');
+      } else {
+        m = document.createElement('img');
+        var lab = el.querySelector('.slot-label');
+        m.alt = lab ? lab.textContent : '';
+      }
+      m.className = 'media'; m.src = v.url;
+      el.insertBefore(m, el.firstChild);
+    });
+    document.querySelectorAll('[data-l]').forEach(function (a) {
+      var v = S.links[a.dataset.l] || {};
+      a.querySelector('.ll').textContent = v.label || linkDefaults[a.dataset.l];
+      var h = v.href || '#';
+      a.setAttribute('href', h);
+      if (/^(https?:|\/_blob\/)/.test(h)) { a.target = '_blank'; a.rel = 'noopener'; } else { a.removeAttribute('target'); }
+    });
+    document.querySelectorAll('[data-h]').forEach(function (el) {
+      var k = el.dataset.h;
+      var hidden = (k in S.hide) ? S.hide[k] : el.dataset.hdef === '1';
+      el.classList.toggle('is-hidden', !!hidden);
+      var b = el.querySelector(':scope > .hbtn'); if (b) b.textContent = hidden ? 'Show' : 'Hide';
+    });
+  }
+  apply();
+
+  // ---------- owner edit mode ----------
+  var api = { artifact: null, assets: null }, editing = false, dirty = false, armedCancel = false;
+  var bar = document.createElement('div'); bar.className = 'ebar'; document.body.appendChild(bar);
+  var status = document.createElement('span'); status.className = 'estatus'; status.setAttribute('role', 'status');
+  function btn(txt, cls, fn) { var b = document.createElement('button'); b.type = 'button'; b.className = 'ebtn ' + (cls || ''); b.textContent = txt; b.addEventListener('click', fn); return b; }
+
+  function renderBar() {
+    bar.innerHTML = ''; bar.classList.toggle('on', editing);
+    if (!editing) { bar.appendChild(btn('Edit page', 'pri', enter)); return; }
+    if (!status.textContent) status.textContent = 'Editing — tap outlined text, photo boxes, buttons, or Hide/Show.';
+    bar.appendChild(status);
+    var g = document.createElement('div'); g.style.display = 'flex'; g.style.gap = '10px';
+    var c = btn('Cancel', '', function () {
+      if (!dirty || armedCancel) { location.reload(); return; }
+      armedCancel = true; c.textContent = 'Tap again to discard';
+      setTimeout(function () { armedCancel = false; c.textContent = 'Cancel'; }, 3000);
+    });
+    g.appendChild(c);
+    g.appendChild(btn('Save & publish', 'pri', save));
+    bar.appendChild(g);
+  }
+
+  var fileIn = document.createElement('input'); fileIn.type = 'file'; fileIn.hidden = true; document.body.appendChild(fileIn);
+  var pending = null;
+  function pickFile(accept, cb) { fileIn.accept = accept; fileIn.value = ''; pending = cb; fileIn.click(); }
+  fileIn.addEventListener('change', function () { var f = fileIn.files && fileIn.files[0]; if (f && pending) pending(f); });
+
+  async function upload(f) {
+    if (!api.assets) { status.textContent = 'Uploads aren’t available in this view.'; return null; }
+    if (f.size > 20 * 1024 * 1024) { status.textContent = 'That file is over 20 MB — try a shorter or compressed version.'; return null; }
+    status.textContent = 'Uploading ' + f.name + '…';
+    try { var r = await api.assets.upload(f); status.textContent = 'Uploaded. Tap Save & publish when you’re done.'; return r; }
+    catch (e) { status.textContent = 'Upload failed: ' + ((e && (e.message || e.code)) || 'unknown error'); return null; }
+  }
+
+  function enter() {
+    editing = true; document.body.classList.add('editing');
+    document.querySelectorAll('[data-e]').forEach(function (el) {
+      try { el.contentEditable = 'plaintext-only'; } catch (e) { el.contentEditable = 'true'; }
+      if (!el.isContentEditable) el.contentEditable = 'true';
+    });
+    document.querySelectorAll('[data-h]').forEach(function (el) {
+      if (el.classList.contains('chip')) return;
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'hbtn';
+      b.textContent = el.classList.contains('is-hidden') ? 'Show' : 'Hide';
+      el.appendChild(b);
+    });
+    renderBar();
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!editing) return;
+    var t = e.target;
+    var sb = t.closest('.slot-btn');
+    if (sb) {
+      e.preventDefault();
+      var slot = sb.closest('[data-img]');
+      pickFile('image/*,video/*', async function (f) {
+        var r = await upload(f); if (!r) return;
+        S.img[slot.dataset.img] = { url: r.url, type: r.contentType || f.type };
+        dirty = true; apply();
+      });
+      return;
+    }
+    var hb = t.closest('.hbtn');
+    if (hb) { e.preventDefault(); var el = hb.parentElement; S.hide[el.dataset.h] = !el.classList.contains('is-hidden'); dirty = true; apply(); return; }
+    var chip = t.closest('.chip[data-h]');
+    if (chip) { S.hide[chip.dataset.h] = !chip.classList.contains('is-hidden'); dirty = true; apply(); return; }
+    var l = t.closest('[data-l]');
+    if (l) { e.preventDefault(); openSheet(l); return; }
+    if (t.closest('a')) e.preventDefault();
+  }, true);
+  document.addEventListener('input', function (e) { if (editing && e.target.closest && e.target.closest('[data-e]')) dirty = true; });
+
+  var sheet = null;
+  function closeSheet() { if (sheet) { sheet.remove(); sheet = null; } }
+  function openSheet(a) {
+    closeSheet();
+    var k = a.dataset.l, cur = S.links[k] || {};
+    sheet = document.createElement('div'); sheet.className = 'sheet'; sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-label', 'Edit button');
+    var l1 = document.createElement('label'); l1.textContent = 'Button text';
+    var iL = document.createElement('input'); iL.type = 'text'; iL.value = cur.label || linkDefaults[k]; l1.appendChild(iL);
+    var l2 = document.createElement('label'); l2.textContent = 'Link — a web address, your email, or upload a file';
+    var iH = document.createElement('input'); iH.type = 'text'; iH.setAttribute('inputmode', 'url'); iH.setAttribute('autocapitalize', 'off'); iH.setAttribute('autocorrect', 'off');
+    iH.placeholder = 'https://linkedin.com/in/…'; iH.value = (cur.href && cur.href !== '#') ? cur.href : ''; l2.appendChild(iH);
+    var row = document.createElement('div'); row.className = 'row';
+    row.appendChild(btn('Upload a file (PDF)', '', function () { pickFile('application/pdf,image/*', async function (f) { var r = await upload(f); if (r) iH.value = r.url; }); }));
+    row.appendChild(btn('Cancel', '', closeSheet));
+    row.appendChild(btn('Done', 'pri', function () {
+      var h = iH.value.trim(), lab = iL.value.trim();
+      if (h && !/^(https?:|mailto:|\/_blob\/|#)/i.test(h)) h = (h.indexOf('@') > 0 && h.indexOf('/') < 0) ? 'mailto:' + h : 'https://' + h;
+      S.links[k] = { label: lab || linkDefaults[k], href: h || '#' };
+      dirty = true; apply(); closeSheet();
+    }));
+    sheet.appendChild(l1); sheet.appendChild(l2); sheet.appendChild(row);
+    document.body.appendChild(sheet); iH.focus();
+  }
+
+  async function save() {
+    document.querySelectorAll('[data-e]').forEach(function (el) {
+      var k = el.dataset.e, v = norm(el.textContent);
+      if (v && v !== norm(defaults[k])) S.t[k] = v; else delete S.t[k];
+    });
+    var json = JSON.stringify(S).replace(/</g, '\\u003c');
+    var body = BODY.replace(/(<script[^>]*id="state"[^>]*>)[\s\S]*?(<\/script>)/, function (_, a, b) { return a + json + b; });
+    var html = '<!doctype html>\n<html lang="en">\n<head>\n' + HEAD + '\n</head>\n<body>\n' + body + '\n</body>\n</html>';
+    status.textContent = 'Publishing…';
+    try { await api.artifact.publish(html); dirty = false; status.textContent = 'Published.'; }
+    catch (e) {
+      var c = e && e.code;
+      status.textContent = c === 'conflict' ? 'Another save landed first — the page will reload.'
+        : (c === 'not_granted' || c === 'not_writer') ? 'Only the page owner can publish changes.'
+        : 'Publish failed: ' + ((e && (e.message || c)) || 'unknown error');
+    }
+  }
+
+
+  // ---------- PDF export ----------
+  var pdfBtn = document.querySelector('.pdfbtn');
+  function loadScript(src) {
+    return new Promise(function (res, rej) {
+      var s = document.createElement('script'); s.src = src;
+      s.onload = res; s.onerror = function () { rej(new Error('Could not load ' + src)); };
+      document.head.appendChild(s);
+    });
+  }
+  function bgOf(el) {
+    while (el && el.nodeType === 1) {
+      var c = getComputedStyle(el).backgroundColor;
+      if (c && c !== 'transparent' && !/rgba\(.*,\s*0\)$/.test(c)) return c;
+      el = el.parentElement;
+    }
+    return getComputedStyle(document.body).backgroundColor || '#EDEDED';
+  }
+  function rgb(c) { var m = (c || '').match(/\d+(\.\d+)?/g) || [237, 237, 237]; return [+m[0], +m[1], +m[2]]; }
+  function pdfBlocks() {
+    var out = [];
+    function add(el, o) { if (el && el.offsetHeight > 0) out.push(Object.assign({ el: el }, o || {})); }
+    add(document.querySelector('.hero'), { newPage: true });
+    add(document.getElementById('work'), { newPage: true });
+    add(document.getElementById('skills'), { newPage: true });
+    document.querySelectorAll('.case').forEach(function (c) {
+      Array.prototype.forEach.call(c.querySelectorAll('.inner > *'), function (k, j) {
+        if (k.classList.contains('casehead')) return;
+        add(k, { newPage: j <= 1, page: c });
+      });
+      add(c.querySelector('.results'), { page: c });
+    });
+    add(document.querySelector('footer'), {});
+    return out;
+  }
+  async function makePdf() {
+    if (editing) { status.textContent = 'Save or cancel your edits first, then download the PDF.'; return; }
+    var root = document.documentElement, prevTheme = root.getAttribute('data-theme');
+    pdfBtn.disabled = true; pdfBtn.textContent = 'Preparing…';
+    try {
+      if (!window.html2canvas) await loadScript('https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js');
+      if (!(window.jspdf && window.jspdf.jsPDF)) await loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');
+      root.setAttribute('data-theme', 'light');
+      if (document.fonts && document.fonts.ready) await document.fonts.ready;
+      await new Promise(function (r) { requestAnimationFrame(function () { requestAnimationFrame(r); }); });
+      var doc = new window.jspdf.jsPDF({ unit: 'pt', format: 'letter', orientation: 'portrait', compress: true });
+      var PW = 612, PH = 792, M = 32, GAP = 16, y = M, first = true;
+      var blocks = pdfBlocks();
+      function newPage(pageEl) {
+        if (!first) doc.addPage();
+        first = false;
+        var c = rgb(bgOf(pageEl || document.body));
+        doc.setFillColor(c[0], c[1], c[2]); doc.rect(0, 0, PW, PH, 'F');
+        y = M;
+      }
+      for (var i = 0; i < blocks.length; i++) {
+        var b = blocks[i], el = b.el;
+        pdfBtn.textContent = 'Making PDF… ' + (i + 1) + '/' + blocks.length;
+        var r = el.getBoundingClientRect();
+        var scale = Math.min(2, Math.sqrt(11e6 / Math.max(1, r.width * r.height)));
+        var canvas = await window.html2canvas(el, {
+          scale: scale, useCORS: true, logging: false, backgroundColor: bgOf(el),
+          ignoreElements: function (n) { return n.classList && (n.classList.contains('ebar') || n.classList.contains('hbtn') || n.classList.contains('slot-btn') || n.classList.contains('sheet')); }
+        });
+        var w = PW - 2 * M, h = canvas.height * w / canvas.width;
+        if (h > PH - 2 * M) { h = PH - 2 * M; w = canvas.width * h / canvas.height; }
+        if (first || b.newPage || y + h > PH - M) newPage(b.page);
+        var x = (PW - w) / 2;
+        doc.addImage(canvas.toDataURL('image/jpeg', 0.88), 'JPEG', x, y, w, h);
+        Array.prototype.forEach.call(el.querySelectorAll('a[href]'), function (a) {
+          var href = a.getAttribute('href') || '';
+          if (!href || href.charAt(0) === '#') return;
+          var url; try { url = new URL(href, location.href).href; } catch (e) { return; }
+          var ar = a.getBoundingClientRect();
+          doc.link(x + (ar.left - r.left) / r.width * w, y + (ar.top - r.top) / r.height * h, ar.width / r.width * w, ar.height / r.height * h, { url: url });
+        });
+        y += h + GAP;
+      }
+      var blob = doc.output('blob');
+      pdfBtn.textContent = 'Saving…';
+      var dl = await window.claude.use('downloads');
+      if (!dl) throw { message: 'Downloads aren’t available in this view.' };
+      await dl.save({ filename: 'Kusum-Subedi-Portfolio.pdf', data: blob });
+      pdfBtn.textContent = 'PDF saved';
+    } catch (e) {
+      var code = e && e.code;
+      pdfBtn.textContent = code === 'declined' ? 'Download PDF' : 'PDF failed — try again';
+      if (code !== 'declined') console.error(e);
+    } finally {
+      if (prevTheme === null) root.removeAttribute('data-theme'); else root.setAttribute('data-theme', prevTheme);
+      pdfBtn.disabled = false;
+      setTimeout(function () { if (!pdfBtn.disabled) pdfBtn.textContent = 'Download PDF'; }, 4000);
+    }
+  }
+  if (pdfBtn) pdfBtn.addEventListener('click', makePdf);
+
+  (async function init() {
+    for (var i = 0; i < 40 && !(window.claude && window.claude.use); i++) { await new Promise(function (r) { setTimeout(r, 250); }); }
+    if (!(window.claude && window.claude.use)) return;
+    try {
+      window.claude.use('downloads').then(function (d) { if (d && pdfBtn) pdfBtn.hidden = false; });
+      var r = await Promise.all([window.claude.use('user'), window.claude.use('artifact'), window.claude.use('assets')]);
+      api.artifact = r[1]; api.assets = r[2];
+      var ok = r[0] ? await r[0].canEdit() : false;
+      if (ok && api.artifact) renderBar();
+    } catch (e) {}
+  })();
+})();
+
+</script>
+</body>
+</html>
