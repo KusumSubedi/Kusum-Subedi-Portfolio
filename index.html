@@ -5,6 +5,21 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Kusum Subedi — Mechanical Engineer</title>
+<script>
+document.addEventListener('error', function (event) {
+	var image = event.target;
+	if (!(image instanceof HTMLImageElement) || image.dataset.caseRetry) return;
+
+	var source = image.getAttribute('src');
+	var match = source && source.match(/(\.jpe?g)$/i);
+	if (!match) return;
+
+	image.dataset.caseRetry = 'true';
+	var extension = match[1];
+	image.src = source.slice(0, -extension.length) +
+		(extension === extension.toLowerCase() ? extension.toUpperCase() : extension.toLowerCase());
+}, true);
+</script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <style>
